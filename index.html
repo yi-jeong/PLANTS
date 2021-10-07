@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/index.css">
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/jquery.transform2d.js"></script>
+<script src="js/index.js"></script>
 <title>PLANTS LOVE</title>
 </head>
 <body>
@@ -35,15 +38,73 @@
 		</div> <!-- container -->
 	</div> <!-- main-header-nav -->
 
+	<div class="sitemap-wrap">
+		<div class="sitemap">
+		<div class="container">
+			<ul class="main-nav-con sitemap-store">
+				<li><a href="">스토어홈</a></li>
+				<li><a href="">카테고리</a></li>
+				<li><a href="">베스트</a></li>
+			</ul>
+			<ul class="main-nav-con sitemap-change">
+				<li><a href="">물물교환홈</a></li>
+			</ul>
+			<ul class="main-nav-con sitemap-find">
+				<li><a href="">내주변꽃집</a></li>
+			</ul>
+			<ul class="main-nav-con sitemap-comm">
+				<li><a href="">커뮤니티홈</a></li>
+			</ul>
+		</div> <!-- container -->
+		</div> <!-- sitemap -->
+	</div> <!-- sitemap-wrap -->
+
 </header> <!-- main-header-->
 
 <div class="main-slide-wrap">
 <div class="container">
-	<div class="silde-wrap">
-		<p class="silde-tit">식물에 미치더니 <br> <b>드루이드</b>가 됐어요.</p>
-		<p>드루이드가 되어버린 그녀의 사연을 알아보자.</p>
-		<p class="silde-btn"><a href="">MORE</a></p>
-	</div>
+	<div class="carrousel">
+		<input type="radio" name="slides" id="radio-1" class="dot" checked>
+		<input type="radio" name="slides" id="radio-2" class="dot">
+		<input type="radio" name="slides" id="radio-3" class="dot">
+		<ul class="slides">
+			<li class="slide">
+				<div class="slide-left">
+					<p class="slide-tit">식물에 미치더니 <br> <b>드루이드</b>가 됐어요.1</p>
+					<p>드루이드가 되어버린 그녀의 사연을 알아보자.</p>
+					<p class="slide-btn"><a href="">MORE</a></p>
+				</div> <!-- silde-left -->
+				<div class="slide-right">
+					<img src="img/main-slide.png" alt="">
+				</div> <!-- slide-right -->
+			</li>
+			<li class="slide">
+				<div class="slide-left">
+					<p class="slide-tit">식물에 미치더니 <br> <b>드루이드</b>가 됐어요.2</p>
+					<p>드루이드가 되어버린 그녀의 사연을 알아보자.</p>
+					<p class="slide-btn"><a href="">MORE</a></p>
+				</div> <!-- silde-left -->
+				<div class="slide-right">
+					<img src="img/main-slide.png" alt="">
+				</div> <!-- slide-right -->
+			</li>
+			<li class="slide">
+				<div class="slide-left">
+					<p class="slide-tit">식물에 미치더니 <br> <b>드루이드</b>가 됐어요.3</p>
+					<p>드루이드가 되어버린 그녀의 사연을 알아보자.</p>
+					<p class="slide-btn"><a href="">MORE</a></p>
+				</div> <!-- silde-left -->
+				<div class="slide-right">
+					<img src="img/main-slide.png" alt="">
+				</div> <!-- slide-right -->
+			</li>
+		</ul>
+		<div class="slidesNavigation">
+			<label for="radio-1" id="dotForRadio-1"></label>
+			<label for="radio-2" id="dotForRadio-2" ></label>
+			<label for="radio-3" id="dotForRadio-3"></label>
+		</div> <!-- slidesNavigation -->
+	</div> <!-- carrousel -->
 </div> <!-- container -->
 </div> <!-- main-slide-wrap -->
 
@@ -114,27 +175,27 @@
 			<div class="best-plants-img"><img src="img/best-01.png" alt=""><div class="rank">1</div></div>
 			<div class="best-plants-info">
 				<p class="best-pants-tit">나무새키 존나 썰어 먹어</p>
-				<p class="best-pants-id">da*** 님</p>
+				<p class="best-pants-id">키위나무키우기 님</p>
 			</div> <!-- best-plants-info -->
 		</div> <!-- best-plants-box -->
 		</div> <!-- best-plants-box-wrap -->
 
 		<div class="best-plants-box-wrap">
 		<div class="best-plants-box">
-			<div class="best-plants-img"><img src="img/best-01.png" alt=""><div class="rank">2</div></div>
+			<div class="best-plants-img"><img src="img/best-02.png" alt=""><div class="rank">2</div></div>
 			<div class="best-plants-info">
-				<p class="best-pants-tit">나무새키 존나 썰어 먹어</p>
-				<p class="best-pants-id">da*** 님</p>
+				<p class="best-pants-tit">분홍이 맨상 질리언</p>
+				<p class="best-pants-id">골드가고싶은인간 님</p>
 			</div> <!-- best-plants-info -->
 		</div> <!-- best-plants-box -->
 		</div> <!-- best-plants-box-wrap -->
 
 		<div class="best-plants-box-wrap">
 		<div class="best-plants-box">
-			<div class="best-plants-img"><img src="img/best-01.png" alt=""><div class="rank">3</div></div>
+			<div class="best-plants-img"><img src="img/best-03.png" alt=""><div class="rank">3</div></div>
 			<div class="best-plants-info">
-				<p class="best-pants-tit">나무새키 존나 썰어 먹어</p>
-				<p class="best-pants-id">da*** 님</p>
+				<p class="best-pants-tit">우리 상큼이 큐티 식물이예요.</p>
+				<p class="best-pants-id">레이겐내남자 님</p>
 			</div> <!-- best-plants-info -->
 		</div> <!-- best-plants-box -->
 		</div> <!-- best-plants-box-wrap -->
@@ -144,7 +205,7 @@
 </div>	 <!-- container -->
 </div> <!-- best-plants-wrap -->
 
-<div class="main-banner"></div> <!-- main-banner -->
+<div class="main-banner"><div class="container"><img src="img/main_banner.jpg" alt=""></div></div> <!-- main-banner -->
 
 <div class="hot-plants-wrap">
 <div class="container">
@@ -155,7 +216,7 @@
 
 		<div class="hot-plants-box-wrap">
 		<div class="hot-plants-box">
-			<div class="hot-plants-img"><img src="img/best-01.png" alt=""></div>
+			<div class="hot-plants-img"><img src="img/hot-01.jpg" alt=""></div>
 			<div class="hot-plants-info">
 				<p class="hot-plants-name">사랑꽃집</p>
 				<p class="hot-plants-tit">프리미엄 조화 나무 아레카야자</p>
@@ -166,22 +227,22 @@
 
 		<div class="hot-plants-box-wrap">
 		<div class="hot-plants-box">
-			<div class="hot-plants-img"><img src="img/best-01.png" alt=""></div>
+			<div class="hot-plants-img"><img src="img/hot-02.jpg" alt=""></div>
 			<div class="hot-plants-info">
-				<p class="hot-plants-name">사랑꽃집</p>
-				<p class="hot-plants-tit">프리미엄 조화 나무 아레카야자</p>
-				<p class="hot-plants-price"><span class="price-percent">32%</span>25,400</p>
+				<p class="hot-plants-name">내마음식물</p>
+				<p class="hot-plants-tit">몬스테라 해초라탄바구니</p>
+				<p class="hot-plants-price">22,500</p>
 			</div> <!-- best-plants-info -->
 		</div> <!-- best-plants-box -->
 		</div> <!-- best-plants-box-wrap -->
 
 		<div class="hot-plants-box-wrap">
 		<div class="hot-plants-box">
-			<div class="hot-plants-img"><img src="img/best-01.png" alt=""></div>
+			<div class="hot-plants-img"><img src="img/hot-03.jpg" alt=""></div>
 			<div class="hot-plants-info">
-				<p class="hot-plants-name">사랑꽃집</p>
-				<p class="hot-plants-tit">프리미엄 조화 나무 아레카야자</p>
-				<p class="hot-plants-price"><span class="price-percent">32%</span>25,400</p>
+				<p class="hot-plants-name">플랜트러브</p>
+				<p class="hot-plants-tit">실내공기정화식물 모음전 40종</p>
+				<p class="hot-plants-price"><span class="price-percent">20%</span>9,900</p>
 			</div> <!-- best-plants-info -->
 		</div> <!-- best-plants-box -->
 		</div> <!-- best-plants-box-wrap -->
@@ -200,30 +261,30 @@
 
 		<div class="popular-tip-box-wrap">
 		<div class="popular-tip-box">
-			<div class="popular-tip-img"><img src="img/best-01.png" alt=""></div>
+			<div class="popular-tip-img"><img src="img/tip-01.jpg" alt=""></div>
 			<div class="popular-tip-info">
 				<p class="popular-tip-tit">화초오래키우는팁 <span class="popular-tip-id">식물에미친인간</span></p>
-				<p class="popular-txt"><span class="popular-tip-date">2021.07.12</span><span class="popular-tip-con"><span class="popular-tip-like">♥ + 999</span><span class="popular-tip-comment">ㅁ + 999</span></span></p>
+				<p class="popular-txt"><span class="popular-tip-date">2021.07.12</span><span class="popular-tip-con"><span class="popular-tip-like"><img src="img/icon/red-heart.png" alt="좋아요"> + 999</span><span class="popular-tip-comment"><img src="img/icon/speech-balloon.png" alt="댓글수"> + 999</span></span></p>
 			</div> <!-- best-plants-info -->
 		</div> <!-- best-plants-box -->
 		</div> <!-- best-plants-box-wrap -->
 
 		<div class="popular-tip-box-wrap">
 		<div class="popular-tip-box">
-			<div class="popular-tip-img"><img src="img/best-01.png" alt=""></div>
+			<div class="popular-tip-img"><img src="img/tip-02.jpg" alt=""></div>
 			<div class="popular-tip-info">
-				<p class="popular-tip-tit">화초오래키우는팁 <span class="popular-tip-id">식물에미친인간</span></p>
-				<p class="popular-txt"><span class="popular-tip-date">2021.07.12</span><span class="popular-tip-con"><span class="popular-tip-like">♥ + 999</span><span class="popular-tip-comment">ㅁ + 999</span></span></p>
+				<p class="popular-tip-tit">아낌없이 줬더니 이만큼 자랐어요 <span class="popular-tip-id">식물사랑꾼</span></p>
+				<p class="popular-txt"><span class="popular-tip-date">2021.07.12</span><span class="popular-tip-con"><span class="popular-tip-like"><img src="img/icon/red-heart.png" alt="좋아요"> + 999</span><span class="popular-tip-comment"><img src="img/icon/speech-balloon.png" alt="댓글수"> + 999</span></span></p>
 			</div> <!-- best-plants-info -->
 		</div> <!-- best-plants-box -->
 		</div> <!-- best-plants-box-wrap -->
 
 		<div class="popular-tip-box-wrap">
 		<div class="popular-tip-box">
-			<div class="popular-tip-img"><img src="img/best-01.png" alt=""></div>
+			<div class="popular-tip-img"><img src="img/tip-03.jpg" alt=""></div>
 			<div class="popular-tip-info">
-				<p class="popular-tip-tit">화초오래키우는팁 <span class="popular-tip-id">식물에미친인간</span></p>
-				<p class="popular-txt"><span class="popular-tip-date">2021.07.12</span><span class="popular-tip-con"><span class="popular-tip-like">♥ + 999</span><span class="popular-tip-comment">ㅁ + 999</span></span></p>
+				<p class="popular-tip-tit">감자승택이한입하세요 <span class="popular-tip-id">감자미인</span></p>
+				<p class="popular-txt"><span class="popular-tip-date">2021.07.12</span><span class="popular-tip-con"><span class="popular-tip-like"><img src="img/icon/red-heart.png" alt="좋아요"> + 999</span><span class="popular-tip-comment"><img src="img/icon/speech-balloon.png" alt="댓글수"> + 999</span></span></p>
 			</div> <!-- best-plants-info -->
 		</div> <!-- best-plants-box -->
 		</div> <!-- best-plants-box-wrap -->
