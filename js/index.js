@@ -1,3 +1,18 @@
+$(document).ready(function($) {
+
+	$('#nav-icon').change(function(){
+		if ($(this).is(":checked")){
+			$(".sitemap-wrap").css('display','block');
+		}else{
+			$(".sitemap-wrap").css('display','none');
+		}
+	});
+
+});
+
+
+
+
 // 메인 배너 이미지 //
 
 img1();
@@ -16,7 +31,6 @@ function img1(){
 
 
 setInterval("img1()",12000);
-
 
 
 
